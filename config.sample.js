@@ -1,16 +1,11 @@
 {
 
-  "host": "0.0.0.0",
+  "host": "127.0.0.1",
   "port": 7777,
-
   "keyLength": 10,
-
   "maxLength": 400000,
-
   "staticMaxAge": 86400,
-
   "recompressStaticAssets": true,
-
   "logging": [
     {
       "level": "verbose",
@@ -18,11 +13,9 @@
       "colorize": true
     }
   ],
-
   "keyGenerator": {
     "type": "phonetic"
   },
-
   "rateLimits": {
     "categories": {
       "normal": {
@@ -34,14 +27,13 @@
 
   "storage": {
     "type": "redis",
-    "host": "0.0.0.0",
+    "host": "127.0.0.1",
     "port": 6379,
     "db": 2,
+    "password": "",
     "expire": 2592000
   },
-
   "documents": {
     "about": "./about.md"
   }
-
 }
