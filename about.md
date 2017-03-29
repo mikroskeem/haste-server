@@ -1,4 +1,4 @@
-# Haste
+# Nightsnack paste
 
 Sharing code is a good thing, and it should be _really_ easy to do it.
 A lot of times, I want to show you something I'm seeing - and that's where we
@@ -8,10 +8,10 @@ Haste is the prettiest, easiest to use pastebin ever made.
 
 ## Basic Usage
 
-Type what you want me to see, click "Save", and then copy the URL.  Send that
+Type what you want me to see, click "save", and then copy the URL.  Send that
 URL to someone and they'll see what you see.
 
-To make a new entry, click "New" (or type 'control + n')
+To make a new entry, click "new" (or type 'C+n')
 
 ## From the Console
 
@@ -25,8 +25,8 @@ You can even take this a step further, and cut out the last step of copying the
 URL with:
 
 * osx: `cat something | haste | pbcopy`
-* linux: `cat something | haste | xsel`
-* windows: check out [WinHaste](https://github.com/ajryan/WinHaste)
+* linux: `cat something | haste | xsel` or `cat something | curl -s -d "@-" "https://paste.nightsnack.cf/documents" | jq -r .key`
+* windows: check out [WinHaste](https://github.com/ajryan/WinHaste) or use [ShareX](https://getsharex.com)
 
 After running that, the STDOUT output of `cat something` will show up at a URL
 which has been conveniently copied to your clipboard.
@@ -38,12 +38,11 @@ right now.
 
 ## Duration
 
-Pastes will stay for 30 days from their last view.  They may be removed earlier
-and without notice.
+Pastes won't expire here. Ever. Unless storage breaks.
 
 ## Privacy
 
-While the contents of hastebin.com are not directly crawled by any search robot
+While the contents of paste.nightsnack.cf are not directly crawled by any search robot
 that obeys "robots.txt", there should be no great expectation of privacy.  Post
 things at your own risk. Not responsible for any loss of data or removed
 pastes.
@@ -53,9 +52,10 @@ pastes.
 Haste can easily be installed behind your network, and it's all open source!
 
 * [haste-client](https://github.com/seejohnrun/haste-client)
-* [haste-server](https://github.com/seejohnrun/haste-server)
+* [haste-server](https://github.com/seejohnrun/haste-server) [(fork is here)](https://git.mikroskeem.eu/mikroskeem/haste-server)
 
 ## Author
 
 Code by John Crepezzi <john.crepezzi@gmail.com>
 Key Design by Brian Dawson <bridawson@gmail.com>
+Modifications by Mark Vainomaa <mikroskeem@mikroskeem.eu>
