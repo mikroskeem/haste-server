@@ -60,27 +60,10 @@ textarea {
     z-index: +1000; /* watch out */
 }
 
-#box1 {
-    padding: 5px;
-    text-align: center;
-    background: #1c2021;
-}
-
 #box2 {
     background: #000000;
     font-size: 0px;
     padding: 0px 5px;
-}
-
-#box1 a.logo, #box1 a.logo:visited {
-    display: inline-block;
-    background: url(logo.png);
-    width: 126px;
-    height: 42px;
-}
-
-#box1 a.logo:hover {
-    background-position: 0 bottom;
 }
 
 #box2 .function {
