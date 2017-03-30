@@ -1,10 +1,20 @@
+# Mac ew
+*.DS_Store
+
+# Package-manager related
+yarn.lock
 npm-debug.log
 node_modules
+.npm
+
+# Vim files (pls ppl configure swap/undo to home directory!)
 *.swp
 *.swo
+*~
+
+# Haste server production data
 data
-*.DS_Store
-.npm
-config.js
 static/*.min.*
-yarn.lock
+
+# Sensitive files
+config.js
