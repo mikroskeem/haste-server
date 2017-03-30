@@ -3,7 +3,7 @@
 Haste is an open-source pastebin software written in node.js, which is easily
 installable in any network.  It can be backed by either redis or filesystem,
 and has a very easy adapter interface for other stores.  A publicly available
-version can be found at [hastebin.com](http://hastebin.com)
+version can be found at [paste.nightsnack.cf](https://paste.nightsnack.cf).
 
 Major design objectives:
 
@@ -29,9 +29,9 @@ STDOUT.  Check the README there for more details and usages.
 ## Installation
 
 1.  Download the package, and expand it
-2.  Explore the settings inside of config.js, but the defaults should be good
-3.  `npm install`
-4.  `npm start`
+2.  Copy config.sample.js to config.js and configure, but the defaults should be good
+3.  Install dependencies using `yarn install` (`npm` works aswell, but `yarn` is hella faster, trust me)
+4.  `yarn start`
 
 ## Settings
 
@@ -104,7 +104,7 @@ Where `path` represents where you want the files stored
 To use redis storage you must install the `redis` package in npm, and have
 `redis-server` running on the machine.
 
-`npm install redis`
+`yarn add redis`
 
 Once you've done that, your config section should look like:
 
@@ -127,7 +127,7 @@ All of which are optional except `type` with very logical default values.
 
 To use postgres storage you must install the `pg` package in npm
 
-`npm install pg`
+`yarn add pg`
 
 Once you've done that, your config section should look like:
 
@@ -154,7 +154,7 @@ All of which are optional except `type` with very logical default values.
 
 To use memcached storage you must install the `memcache` package via npm
 
-`npm install memcache`
+`yarn add memcache`
 
 Once you've done that, your config section should look like:
 
